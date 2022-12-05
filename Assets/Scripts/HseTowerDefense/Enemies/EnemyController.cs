@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using HseTowerDefense.Enemies;
+using HseTowerDefense.PlayerResources;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -81,6 +82,7 @@ public class EnemyController : MonoBehaviour
         {
             _enemyState = EnemyState.Die;
             gameObject.SetActive(false);
+            PlayerInventory.Instance.coins += _enemyData.KillCost;
             Destroy(gameObject);
         }
     }

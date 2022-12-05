@@ -2,7 +2,7 @@
 
 namespace HseTowerDefense.Enemies
 {
-    [CreateAssetMenu(fileName = "New Enemy Data", menuName = "HseTowerDefense/Enemies/EnemyData", order = 51)]
+    [CreateAssetMenu(fileName = "New Enemy Data", menuName = "HSE Tower Defense/Enemies/EnemyData", order = 51)]
     public class EnemyData : ScriptableObject
     {
         [Header("Movement settings")] 
@@ -16,6 +16,10 @@ namespace HseTowerDefense.Enemies
         [Header("View settings")] 
         [Tooltip("Enemy view prefab.")]
         [SerializeField] private GameObject viewPrefab;
+
+        [SerializeField] private float _killCost;
+
+        public float KillCost => _killCost;
         
         /// <summary>
         /// Enemy movement speed.

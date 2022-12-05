@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [System.Serializable]
+    [Serializable]
     private struct EnemyWave
     {
         public string waveName;

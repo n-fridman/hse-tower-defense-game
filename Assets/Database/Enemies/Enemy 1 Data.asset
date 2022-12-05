@@ -15,3 +15,4 @@ MonoBehaviour:
   _speed: 5
   _health: 100
   viewPrefab: {fileID: 974824427791201805, guid: 44a7829496f1eae4e8cc27f2682a494f, type: 3}
+  _killCost: 25
